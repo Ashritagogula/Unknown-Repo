@@ -1,0 +1,7 @@
+N = int(input())
+arr = list(map(int, input().split()))
+
+average = sum(arr) // N
+count = sum(1 for x in arr if x >= average)
+
+print(count)
